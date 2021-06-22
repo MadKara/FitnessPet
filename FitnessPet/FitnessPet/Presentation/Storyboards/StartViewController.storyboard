@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="9ol-YN-ZaM">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" id="Jeq-JN-ZxQ" customClass="StartViewController" customModule="FitnessPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CcT-kI-Mev">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ztf-vg-Deg">
+                                <rect key="frame" x="104.5" y="418.5" width="205" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SuperHero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruQ-Hy-O9S">
+                                        <rect key="frame" x="44.5" y="0.0" width="116" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your superhero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-j9-WiS">
+                                        <rect key="frame" x="0.0" y="35" width="205" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-3y-nhm">
+                                <rect key="frame" x="0.0" y="487.5" width="414" height="374.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Superwoman"/>
+                                <connections>
+                                    <action selector="chosenSex:" destination="Jeq-JN-ZxQ" eventType="touchUpInside" id="GAt-wW-8Bv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvv-Q5-b5N">
+                                <rect key="frame" x="0.0" y="44" width="414" height="364.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Superman"/>
+                                <connections>
+                                    <action selector="chosenSex:" destination="Jeq-JN-ZxQ" eventType="touchUpInside" id="bq2-P0-Ao4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N37-AW-IlJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ztf-vg-Deg" firstAttribute="centerY" secondItem="CcT-kI-Mev" secondAttribute="centerY" id="DdA-zm-KMB"/>
+                            <constraint firstItem="N37-AW-IlJ" firstAttribute="trailing" secondItem="vvv-Q5-b5N" secondAttribute="trailing" id="JzO-ab-g3A"/>
+                            <constraint firstItem="mYs-3y-nhm" firstAttribute="trailing" secondItem="N37-AW-IlJ" secondAttribute="trailing" id="Q3f-hn-eeE"/>
+                            <constraint firstItem="ztf-vg-Deg" firstAttribute="centerX" secondItem="CcT-kI-Mev" secondAttribute="centerX" id="Sh8-G5-bsw"/>
+                            <constraint firstItem="vvv-Q5-b5N" firstAttribute="top" secondItem="N37-AW-IlJ" secondAttribute="top" id="VaP-9H-tj2"/>
+                            <constraint firstItem="ztf-vg-Deg" firstAttribute="top" secondItem="vvv-Q5-b5N" secondAttribute="bottom" constant="10" id="WVZ-Pp-YCl"/>
+                            <constraint firstItem="vvv-Q5-b5N" firstAttribute="leading" secondItem="N37-AW-IlJ" secondAttribute="leading" id="dn0-hX-mzS"/>
+                            <constraint firstItem="mYs-3y-nhm" firstAttribute="top" secondItem="ztf-vg-Deg" secondAttribute="bottom" constant="10" id="j34-dy-CRM"/>
+                            <constraint firstItem="mYs-3y-nhm" firstAttribute="bottom" secondItem="N37-AW-IlJ" secondAttribute="bottom" id="sbV-oU-GW1"/>
+                            <constraint firstItem="mYs-3y-nhm" firstAttribute="leading" secondItem="N37-AW-IlJ" secondAttribute="leading" id="ym9-j8-d5g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1F-fd-ZQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="-348.21428571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
