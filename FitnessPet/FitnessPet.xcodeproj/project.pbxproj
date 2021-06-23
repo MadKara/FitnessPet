@@ -14,12 +14,30 @@
 		EC0008DA2682011500743FF7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0008D92682011500743FF7 /* StartViewController.swift */; };
 		EC0008E6268231C000743FF7 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0008E5268231C000743FF7 /* HomeViewController.storyboard */; };
 		EC0008E9268231D600743FF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0008E8268231D600743FF7 /* HomeViewController.swift */; };
+		EC5C51892683ACD0003B7927 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C51882683ACD0003B7927 /* StartViewModel.swift */; };
+		EC5C518C2683B003003B7927 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C518B2683B003003B7927 /* HomeViewModel.swift */; };
 		ECA5CDE9267FB69B00726F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5CDE8267FB69B00726F9E /* AppDelegate.swift */; };
 		ECA5CDEB267FB69B00726F9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5CDEA267FB69B00726F9E /* SceneDelegate.swift */; };
 		ECA5CDED267FB69B00726F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5CDEC267FB69B00726F9E /* ViewController.swift */; };
 		ECA5CDF0267FB69B00726F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA5CDEE267FB69B00726F9E /* Main.storyboard */; };
 		ECA5CDF2267FB69C00726F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA5CDF1267FB69C00726F9E /* Assets.xcassets */; };
 		ECA5CDF5267FB69C00726F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA5CDF3267FB69C00726F9E /* LaunchScreen.storyboard */; };
+		ECC5E90B26835EBB00395C22 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E90A26835EBB00395C22 /* ProfileViewController.swift */; };
+		ECC5E90E26835ED400395C22 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC5E90D26835ED400395C22 /* ProfileViewController.storyboard */; };
+		ECC5E91126835F2F00395C22 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E91026835F2F00395C22 /* ProgressViewController.swift */; };
+		ECC5E91426835F3F00395C22 /* ProgressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC5E91326835F3F00395C22 /* ProgressViewController.storyboard */; };
+		ECC5E91826835FC800395C22 /* ProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E91726835FC800395C22 /* ProgramsViewController.swift */; };
+		ECC5E91B26835FDD00395C22 /* ProgramsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC5E91A26835FDD00395C22 /* ProgramsViewController.storyboard */; };
+		ECC5E91E2683603900395C22 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E91D2683603900395C22 /* CalculatorViewController.swift */; };
+		ECC5E9212683604A00395C22 /* CalculatorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC5E9202683604A00395C22 /* CalculatorViewController.storyboard */; };
+		ECC5E9242683609300395C22 /* MusclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9232683609300395C22 /* MusclesViewController.swift */; };
+		ECC5E927268360A200395C22 /* MusclesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC5E926268360A200395C22 /* MusclesViewController.storyboard */; };
+		ECC5E92A268360F700395C22 /* MainCoordinator+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E929268360F700395C22 /* MainCoordinator+Profile.swift */; };
+		ECC5E92D2683613200395C22 /* MainCoordinator+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E92C2683613200395C22 /* MainCoordinator+Progress.swift */; };
+		ECC5E9302683615000395C22 /* MainCoordinator+Programs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E92F2683615000395C22 /* MainCoordinator+Programs.swift */; };
+		ECC5E9332683616700395C22 /* MainCoordinator+Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9322683616700395C22 /* MainCoordinator+Calculator.swift */; };
+		ECC5E9362683617D00395C22 /* MainCoordinator+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9352683617D00395C22 /* MainCoordinator+Muscles.swift */; };
+		ECC5E9392683644000395C22 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9382683644000395C22 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +48,8 @@
 		EC0008D92682011500743FF7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EC0008E5268231C000743FF7 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		EC0008E8268231D600743FF7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC5C51882683ACD0003B7927 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		EC5C518B2683B003003B7927 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		ECA5CDE5267FB69B00726F9E /* FitnessPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA5CDE8267FB69B00726F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA5CDEA267FB69B00726F9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +58,22 @@
 		ECA5CDF1267FB69C00726F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA5CDF4267FB69C00726F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECA5CDF6267FB69C00726F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC5E90A26835EBB00395C22 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ECC5E90D26835ED400395C22 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		ECC5E91026835F2F00395C22 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		ECC5E91326835F3F00395C22 /* ProgressViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgressViewController.storyboard; sourceTree = "<group>"; };
+		ECC5E91726835FC800395C22 /* ProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsViewController.swift; sourceTree = "<group>"; };
+		ECC5E91A26835FDD00395C22 /* ProgramsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgramsViewController.storyboard; sourceTree = "<group>"; };
+		ECC5E91D2683603900395C22 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		ECC5E9202683604A00395C22 /* CalculatorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalculatorViewController.storyboard; sourceTree = "<group>"; };
+		ECC5E9232683609300395C22 /* MusclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusclesViewController.swift; sourceTree = "<group>"; };
+		ECC5E926268360A200395C22 /* MusclesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusclesViewController.storyboard; sourceTree = "<group>"; };
+		ECC5E929268360F700395C22 /* MainCoordinator+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Profile.swift"; sourceTree = "<group>"; };
+		ECC5E92C2683613200395C22 /* MainCoordinator+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Progress.swift"; sourceTree = "<group>"; };
+		ECC5E92F2683615000395C22 /* MainCoordinator+Programs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Programs.swift"; sourceTree = "<group>"; };
+		ECC5E9322683616700395C22 /* MainCoordinator+Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Calculator.swift"; sourceTree = "<group>"; };
+		ECC5E9352683617D00395C22 /* MainCoordinator+Muscles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Muscles.swift"; sourceTree = "<group>"; };
+		ECC5E9382683644000395C22 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +94,11 @@
 				ECA5CDEE267FB69B00726F9E /* Main.storyboard */,
 				EC0008D52681FF7F00743FF7 /* StartViewController.storyboard */,
 				EC0008E5268231C000743FF7 /* HomeViewController.storyboard */,
+				ECC5E90D26835ED400395C22 /* ProfileViewController.storyboard */,
+				ECC5E91326835F3F00395C22 /* ProgressViewController.storyboard */,
+				ECC5E91A26835FDD00395C22 /* ProgramsViewController.storyboard */,
+				ECC5E9202683604A00395C22 /* CalculatorViewController.storyboard */,
+				ECC5E926268360A200395C22 /* MusclesViewController.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -68,14 +109,30 @@
 				ECA5CDEC267FB69B00726F9E /* ViewController.swift */,
 				EC0008D92682011500743FF7 /* StartViewController.swift */,
 				EC0008E8268231D600743FF7 /* HomeViewController.swift */,
+				ECC5E90A26835EBB00395C22 /* ProfileViewController.swift */,
+				ECC5E91026835F2F00395C22 /* ProgressViewController.swift */,
+				ECC5E91726835FC800395C22 /* ProgramsViewController.swift */,
+				ECC5E91D2683603900395C22 /* CalculatorViewController.swift */,
+				ECC5E9232683609300395C22 /* MusclesViewController.swift */,
+				ECC5E9382683644000395C22 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EC5C51872683ABEE003B7927 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C51882683ACD0003B7927 /* StartViewModel.swift */,
+				EC5C518B2683B003003B7927 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		EC8EF0B62682720D00E3A601 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				EC8EF0B82682724A00E3A601 /* Coordinators */,
+				EC5C51872683ABEE003B7927 /* ViewModels */,
 				EC0008DD2682036C00743FF7 /* ViewControllers */,
 				EC0008DC2682035500743FF7 /* Storyboards */,
 			);
@@ -95,6 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				EC0008D12681F9C400743FF7 /* MainCoordinator.swift */,
+				ECC5E929268360F700395C22 /* MainCoordinator+Profile.swift */,
+				ECC5E92C2683613200395C22 /* MainCoordinator+Progress.swift */,
+				ECC5E92F2683615000395C22 /* MainCoordinator+Programs.swift */,
+				ECC5E9322683616700395C22 /* MainCoordinator+Calculator.swift */,
+				ECC5E9352683617D00395C22 /* MainCoordinator+Muscles.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -194,9 +256,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0008E6268231C000743FF7 /* HomeViewController.storyboard in Resources */,
+				ECC5E9212683604A00395C22 /* CalculatorViewController.storyboard in Resources */,
 				EC0008D62681FF7F00743FF7 /* StartViewController.storyboard in Resources */,
+				ECC5E90E26835ED400395C22 /* ProfileViewController.storyboard in Resources */,
 				ECA5CDF5267FB69C00726F9E /* LaunchScreen.storyboard in Resources */,
 				ECA5CDF2267FB69C00726F9E /* Assets.xcassets in Resources */,
+				ECC5E91426835F3F00395C22 /* ProgressViewController.storyboard in Resources */,
+				ECC5E91B26835FDD00395C22 /* ProgramsViewController.storyboard in Resources */,
+				ECC5E927268360A200395C22 /* MusclesViewController.storyboard in Resources */,
 				ECA5CDF0267FB69B00726F9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,11 +277,24 @@
 			files = (
 				EC0008CC2681F6A300743FF7 /* Coordinator.swift in Sources */,
 				EC0008DA2682011500743FF7 /* StartViewController.swift in Sources */,
+				ECC5E91826835FC800395C22 /* ProgramsViewController.swift in Sources */,
+				ECC5E9242683609300395C22 /* MusclesViewController.swift in Sources */,
+				ECC5E9392683644000395C22 /* BaseViewController.swift in Sources */,
+				EC5C51892683ACD0003B7927 /* StartViewModel.swift in Sources */,
 				EC0008D22681F9C400743FF7 /* MainCoordinator.swift in Sources */,
+				ECC5E9332683616700395C22 /* MainCoordinator+Calculator.swift in Sources */,
 				EC0008E9268231D600743FF7 /* HomeViewController.swift in Sources */,
 				ECA5CDED267FB69B00726F9E /* ViewController.swift in Sources */,
+				ECC5E91126835F2F00395C22 /* ProgressViewController.swift in Sources */,
+				ECC5E9302683615000395C22 /* MainCoordinator+Programs.swift in Sources */,
 				EC0008CF2681F7D800743FF7 /* Storyboarded.swift in Sources */,
+				ECC5E90B26835EBB00395C22 /* ProfileViewController.swift in Sources */,
 				ECA5CDE9267FB69B00726F9E /* AppDelegate.swift in Sources */,
+				ECC5E92A268360F700395C22 /* MainCoordinator+Profile.swift in Sources */,
+				EC5C518C2683B003003B7927 /* HomeViewModel.swift in Sources */,
+				ECC5E9362683617D00395C22 /* MainCoordinator+Muscles.swift in Sources */,
+				ECC5E92D2683613200395C22 /* MainCoordinator+Progress.swift in Sources */,
+				ECC5E91E2683603900395C22 /* CalculatorViewController.swift in Sources */,
 				ECA5CDEB267FB69B00726F9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
