@@ -14,6 +14,9 @@
 		EC0008DA2682011500743FF7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0008D92682011500743FF7 /* StartViewController.swift */; };
 		EC0008E6268231C000743FF7 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0008E5268231C000743FF7 /* HomeViewController.storyboard */; };
 		EC0008E9268231D600743FF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0008E8268231D600743FF7 /* HomeViewController.swift */; };
+		EC122B8B2684BBF8003F1184 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC122B8A2684BBF8003F1184 /* Profile.swift */; };
+		EC122B8E2684BD05003F1184 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC122B8D2684BD05003F1184 /* ProfileManager.swift */; };
+		EC122B912684BD81003F1184 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC122B902684BD81003F1184 /* ProfileViewModel.swift */; };
 		EC5C51892683ACD0003B7927 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C51882683ACD0003B7927 /* StartViewModel.swift */; };
 		EC5C518C2683B003003B7927 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C518B2683B003003B7927 /* HomeViewModel.swift */; };
 		ECA5CDE9267FB69B00726F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5CDE8267FB69B00726F9E /* AppDelegate.swift */; };
@@ -48,6 +51,9 @@
 		EC0008D92682011500743FF7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EC0008E5268231C000743FF7 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		EC0008E8268231D600743FF7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC122B8A2684BBF8003F1184 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		EC122B8D2684BD05003F1184 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		EC122B902684BD81003F1184 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EC5C51882683ACD0003B7927 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		EC5C518B2683B003003B7927 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		ECA5CDE5267FB69B00726F9E /* FitnessPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,11 +125,21 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		EC122B892684BBC6003F1184 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC122B8A2684BBF8003F1184 /* Profile.swift */,
+				EC122B8D2684BD05003F1184 /* ProfileManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EC5C51872683ABEE003B7927 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				EC5C51882683ACD0003B7927 /* StartViewModel.swift */,
 				EC5C518B2683B003003B7927 /* HomeViewModel.swift */,
+				EC122B902684BD81003F1184 /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -132,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8EF0B82682724A00E3A601 /* Coordinators */,
+				EC122B892684BBC6003F1184 /* Models */,
 				EC5C51872683ABEE003B7927 /* ViewModels */,
 				EC0008DD2682036C00743FF7 /* ViewControllers */,
 				EC0008DC2682035500743FF7 /* Storyboards */,
@@ -281,6 +298,8 @@
 				ECC5E9242683609300395C22 /* MusclesViewController.swift in Sources */,
 				ECC5E9392683644000395C22 /* BaseViewController.swift in Sources */,
 				EC5C51892683ACD0003B7927 /* StartViewModel.swift in Sources */,
+				EC122B912684BD81003F1184 /* ProfileViewModel.swift in Sources */,
+				EC122B8E2684BD05003F1184 /* ProfileManager.swift in Sources */,
 				EC0008D22681F9C400743FF7 /* MainCoordinator.swift in Sources */,
 				ECC5E9332683616700395C22 /* MainCoordinator+Calculator.swift in Sources */,
 				EC0008E9268231D600743FF7 /* HomeViewController.swift in Sources */,
@@ -294,6 +313,7 @@
 				EC5C518C2683B003003B7927 /* HomeViewModel.swift in Sources */,
 				ECC5E9362683617D00395C22 /* MainCoordinator+Muscles.swift in Sources */,
 				ECC5E92D2683613200395C22 /* MainCoordinator+Progress.swift in Sources */,
+				EC122B8B2684BBF8003F1184 /* Profile.swift in Sources */,
 				ECC5E91E2683603900395C22 /* CalculatorViewController.swift in Sources */,
 				ECA5CDEB267FB69B00726F9E /* SceneDelegate.swift in Sources */,
 			);

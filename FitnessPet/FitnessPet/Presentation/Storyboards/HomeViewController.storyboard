@@ -92,6 +92,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="labelSex" destination="WNd-jH-vlm" id="ce9-pe-bVo"/>
                         <outlet property="tableView" destination="I6C-Xz-EDp" id="N4b-8d-d7Z"/>
                     </connections>
                 </viewController>

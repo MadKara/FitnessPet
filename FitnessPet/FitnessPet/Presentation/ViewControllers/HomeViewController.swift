@@ -13,12 +13,15 @@ class HomeViewController: BaseViewController, Storyboarded {
     var homeViewModel = HomeViewModel()
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelSex: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.delegate = self
+        
+        labelSex.text = ProfileManager.sharedProfileManager.userInfo?.sex
     }
     
     override func viewWillAppear(_ animated: Bool) {

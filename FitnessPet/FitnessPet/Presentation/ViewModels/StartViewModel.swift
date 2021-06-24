@@ -13,4 +13,11 @@ struct StartViewModel {
     let maleButtonTitle = "Superman"
     let femaleButtonTitle = "Superwoman"
     
+    func createProfile(sex: String) {
+        
+        let profile = ProfileManager.sharedProfileManager.defaultProfile
+        
+        profile.sex = sex
+        ProfileManager.sharedProfileManager.saveProfileData(profile: profile)
+    }
 }

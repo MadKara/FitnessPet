@@ -29,6 +29,10 @@ class StartViewController: BaseViewController, Storyboarded {
     
 
     @IBAction func chosenSex(_ sender: UIButton) {
-        coordinator?.home()
+        
+        if let title = sender.title(for: .normal) {
+            startVievModel.createProfile(sex: title)
+            coordinator?.home()
+        }
     }
 }
