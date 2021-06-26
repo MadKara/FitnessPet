@@ -12,7 +12,7 @@ class ProfileManager {
     
     static let sharedProfileManager = ProfileManager()
     
-    let filePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("ProfileInfo")
+    private let filePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("ProfileInfo").path
      
     var defaultProfile = Profile(
         name: "",
@@ -25,17 +25,19 @@ class ProfileManager {
     
     func saveProfileData(profile: Profile) {
         do {
-            let data = try NSKeyedArchiver.archivedData(withRootObject: profile, requiringSecureCoding: false)
-            try data.write(to: filePath)
+            let data = try PropertyListEncoder().encode(profile)
+            NSKeyedArchiver.archiveRootObject(data, toFile: filePath)
         } catch {
-            print("Error saving data")
+            print(error)
         }
     }
     
-    func getProfileData() -> Profile? {
+    private func getProfileData() -> Profile? {
+        guard let data = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? Data else {
+            return nil
+        }
         do {
-            let data = try Data(contentsOf: filePath)
-            let profile = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Profile
+            let profile = try PropertyListDecoder().decode(Profile?.self, from: data)
             return profile
         } catch {
             return nil

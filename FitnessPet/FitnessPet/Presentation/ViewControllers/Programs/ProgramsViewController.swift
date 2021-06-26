@@ -9,11 +9,11 @@ import UIKit
 
 class ProgramsViewController: BaseViewController, Storyboarded {
     
-    var coordinator: MainCoordinator?
+    weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Programs"
         // Do any additional setup after loading the view.
     }
 }

@@ -10,10 +10,10 @@ import UIKit
 class StartViewController: BaseViewController, Storyboarded {
 
     var coordinator: MainCoordinator?
-    var startVievModel = StartViewModel()
+    private var startVievModel = StartViewModel()
     
-    @IBOutlet weak var maleButton: UIButton!
-    @IBOutlet weak var femaleButton: UIButton!
+    @IBOutlet private weak var maleButton: UIButton!
+    @IBOutlet private weak var femaleButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class StartViewController: BaseViewController, Storyboarded {
     }
     
 
-    @IBAction func chosenSex(_ sender: UIButton) {
+    @IBAction private func chosenSex(_ sender: UIButton) {
         
         if let title = sender.title(for: .normal) {
             startVievModel.createProfile(sex: title)

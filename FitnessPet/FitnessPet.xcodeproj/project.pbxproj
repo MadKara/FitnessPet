@@ -41,6 +41,8 @@
 		ECC5E9332683616700395C22 /* MainCoordinator+Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9322683616700395C22 /* MainCoordinator+Calculator.swift */; };
 		ECC5E9362683617D00395C22 /* MainCoordinator+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9352683617D00395C22 /* MainCoordinator+Muscles.swift */; };
 		ECC5E9392683644000395C22 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9382683644000395C22 /* BaseViewController.swift */; };
+		ECEACA7A2687AC1700833318 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEACA782687AC1700833318 /* MenuTableViewCell.swift */; };
+		ECEACA7B2687AC1700833318 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEACA792687AC1700833318 /* MenuTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		ECC5E9322683616700395C22 /* MainCoordinator+Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Calculator.swift"; sourceTree = "<group>"; };
 		ECC5E9352683617D00395C22 /* MainCoordinator+Muscles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Muscles.swift"; sourceTree = "<group>"; };
 		ECC5E9382683644000395C22 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ECEACA782687AC1700833318 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		ECEACA792687AC1700833318 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +102,13 @@
 			children = (
 				ECA5CDF3267FB69C00726F9E /* LaunchScreen.storyboard */,
 				ECA5CDEE267FB69B00726F9E /* Main.storyboard */,
-				EC0008D52681FF7F00743FF7 /* StartViewController.storyboard */,
-				EC0008E5268231C000743FF7 /* HomeViewController.storyboard */,
-				ECC5E90D26835ED400395C22 /* ProfileViewController.storyboard */,
-				ECC5E91326835F3F00395C22 /* ProgressViewController.storyboard */,
-				ECC5E91A26835FDD00395C22 /* ProgramsViewController.storyboard */,
-				ECC5E9202683604A00395C22 /* CalculatorViewController.storyboard */,
-				ECC5E926268360A200395C22 /* MusclesViewController.storyboard */,
+				ECEACA722687AAB000833318 /* Start */,
+				ECEACA712687AAA600833318 /* Home */,
+				ECEACA6C2687AA4800833318 /* Profile */,
+				ECEACA6D2687AA5100833318 /* Progress */,
+				ECEACA6E2687AA5900833318 /* Programs */,
+				ECEACA6F2687AA6100833318 /* Calculator */,
+				ECEACA702687AA6A00833318 /* Muscles */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -113,13 +117,13 @@
 			isa = PBXGroup;
 			children = (
 				ECA5CDEC267FB69B00726F9E /* ViewController.swift */,
-				EC0008D92682011500743FF7 /* StartViewController.swift */,
-				EC0008E8268231D600743FF7 /* HomeViewController.swift */,
-				ECC5E90A26835EBB00395C22 /* ProfileViewController.swift */,
-				ECC5E91026835F2F00395C22 /* ProgressViewController.swift */,
-				ECC5E91726835FC800395C22 /* ProgramsViewController.swift */,
-				ECC5E91D2683603900395C22 /* CalculatorViewController.swift */,
-				ECC5E9232683609300395C22 /* MusclesViewController.swift */,
+				ECEACA5E2687A98A00833318 /* Start */,
+				ECEACA5F2687A99B00833318 /* Home */,
+				ECEACA612687A9A300833318 /* Profile */,
+				ECEACA632687A9AC00833318 /* Progress */,
+				ECEACA652687A9BA00833318 /* Programs */,
+				ECEACA672687A9C200833318 /* Calculator */,
+				ECEACA682687A9C900833318 /* Muscles */,
 				ECC5E9382683644000395C22 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
@@ -128,8 +132,7 @@
 		EC122B892684BBC6003F1184 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EC122B8A2684BBF8003F1184 /* Profile.swift */,
-				EC122B8D2684BD05003F1184 /* ProfileManager.swift */,
+				ECEACA6A2687AA2200833318 /* Profile */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,9 +140,9 @@
 		EC5C51872683ABEE003B7927 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				EC5C51882683ACD0003B7927 /* StartViewModel.swift */,
-				EC5C518B2683B003003B7927 /* HomeViewModel.swift */,
-				EC122B902684BD81003F1184 /* ProfileViewModel.swift */,
+				ECEACA762687ABA500833318 /* Start */,
+				ECEACA752687AB9C00833318 /* Home */,
+				ECEACA732687AB8400833318 /* Profile */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -215,6 +218,161 @@
 			path = FitnessPet;
 			sourceTree = "<group>";
 		};
+		ECEACA5E2687A98A00833318 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				EC0008D92682011500743FF7 /* StartViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		ECEACA5F2687A99B00833318 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC0008E8268231D600743FF7 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ECEACA612687A9A300833318 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E90A26835EBB00395C22 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ECEACA632687A9AC00833318 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E91026835F2F00395C22 /* ProgressViewController.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		ECEACA652687A9BA00833318 /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E91726835FC800395C22 /* ProgramsViewController.swift */,
+			);
+			path = Programs;
+			sourceTree = "<group>";
+		};
+		ECEACA672687A9C200833318 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E91D2683603900395C22 /* CalculatorViewController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		ECEACA682687A9C900833318 /* Muscles */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E9232683609300395C22 /* MusclesViewController.swift */,
+			);
+			path = Muscles;
+			sourceTree = "<group>";
+		};
+		ECEACA6A2687AA2200833318 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EC122B8A2684BBF8003F1184 /* Profile.swift */,
+				EC122B8D2684BD05003F1184 /* ProfileManager.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ECEACA6C2687AA4800833318 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E90D26835ED400395C22 /* ProfileViewController.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ECEACA6D2687AA5100833318 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E91326835F3F00395C22 /* ProgressViewController.storyboard */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		ECEACA6E2687AA5900833318 /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E91A26835FDD00395C22 /* ProgramsViewController.storyboard */,
+			);
+			path = Programs;
+			sourceTree = "<group>";
+		};
+		ECEACA6F2687AA6100833318 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E9202683604A00395C22 /* CalculatorViewController.storyboard */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		ECEACA702687AA6A00833318 /* Muscles */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5E926268360A200395C22 /* MusclesViewController.storyboard */,
+			);
+			path = Muscles;
+			sourceTree = "<group>";
+		};
+		ECEACA712687AAA600833318 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC0008E5268231C000743FF7 /* HomeViewController.storyboard */,
+				ECEACA7D2687C10700833318 /* MenuCell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ECEACA722687AAB000833318 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				EC0008D52681FF7F00743FF7 /* StartViewController.storyboard */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		ECEACA732687AB8400833318 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EC122B902684BD81003F1184 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ECEACA752687AB9C00833318 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C518B2683B003003B7927 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ECEACA762687ABA500833318 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C51882683ACD0003B7927 /* StartViewModel.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		ECEACA7D2687C10700833318 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECEACA782687AC1700833318 /* MenuTableViewCell.swift */,
+				ECEACA792687AC1700833318 /* MenuTableViewCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,6 +438,7 @@
 				ECA5CDF2267FB69C00726F9E /* Assets.xcassets in Resources */,
 				ECC5E91426835F3F00395C22 /* ProgressViewController.storyboard in Resources */,
 				ECC5E91B26835FDD00395C22 /* ProgramsViewController.storyboard in Resources */,
+				ECEACA7B2687AC1700833318 /* MenuTableViewCell.xib in Resources */,
 				ECC5E927268360A200395C22 /* MusclesViewController.storyboard in Resources */,
 				ECA5CDF0267FB69B00726F9E /* Main.storyboard in Resources */,
 			);
@@ -316,6 +475,7 @@
 				EC122B8B2684BBF8003F1184 /* Profile.swift in Sources */,
 				ECC5E91E2683603900395C22 /* CalculatorViewController.swift in Sources */,
 				ECA5CDEB267FB69B00726F9E /* SceneDelegate.swift in Sources */,
+				ECEACA7A2687AC1700833318 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
