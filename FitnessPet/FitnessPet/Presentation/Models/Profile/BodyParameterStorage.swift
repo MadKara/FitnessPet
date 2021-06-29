@@ -1,21 +1,13 @@
 //
-//  ProfileViewModel.swift
+//  BodyParameterStorage.swift
 //  FitnessPet
 //
-//  Created by intern on 24.06.2021.
+//  Created by intern on 28.06.2021.
 //
 
 import Foundation
-import UIKit
 
-class ProfileViewModel {
-    
-    private var userProfile: Profile = ProfileManager.sharedProfileManager.userInfo!
-    
-    public let nameLabel = "Name"
-    public let parametersLabel = "Choose the parameters"
-    public let barTitle = "Profile"
-    public let textFieldNamePlaceholder = "Enter your name"
+class BodyParameterStorage {
     
     let bodyPartNames = [
         "Ріст",
@@ -36,4 +28,5 @@ class ProfileViewModel {
         "Кісточка ліва",
         "Кісточка права"
     ]
+    
 }

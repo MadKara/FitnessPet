@@ -17,8 +17,16 @@
 		EC122B8B2684BBF8003F1184 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC122B8A2684BBF8003F1184 /* Profile.swift */; };
 		EC122B8E2684BD05003F1184 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC122B8D2684BD05003F1184 /* ProfileManager.swift */; };
 		EC122B912684BD81003F1184 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC122B902684BD81003F1184 /* ProfileViewModel.swift */; };
+		EC5449E7268A4A4F0069F1F0 /* BodyParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5449E6268A4A4F0069F1F0 /* BodyParameter.swift */; };
+		EC5449EA268A4A710069F1F0 /* BodyParameterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5449E9268A4A710069F1F0 /* BodyParameterViewModel.swift */; };
+		EC5449ED268A4B3C0069F1F0 /* BodyParameterStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5449EC268A4B3C0069F1F0 /* BodyParameterStorage.swift */; };
+		EC5449F3268A53060069F1F0 /* ParameterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5449F1268A53060069F1F0 /* ParameterTableViewCell.swift */; };
+		EC5449F4268A53060069F1F0 /* ParameterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5449F2268A53060069F1F0 /* ParameterTableViewCell.xib */; };
 		EC5C51892683ACD0003B7927 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C51882683ACD0003B7927 /* StartViewModel.swift */; };
 		EC5C518C2683B003003B7927 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C518B2683B003003B7927 /* HomeViewModel.swift */; };
+		EC62D65B268918EF00B42040 /* ParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62D65A268918EF00B42040 /* ParametersViewController.swift */; };
+		EC62D65E2689191500B42040 /* ParametersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC62D65D2689191500B42040 /* ParametersViewController.storyboard */; };
+		EC62D66226891CBA00B42040 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62D66126891CBA00B42040 /* PopAnimator.swift */; };
 		ECA5CDE9267FB69B00726F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5CDE8267FB69B00726F9E /* AppDelegate.swift */; };
 		ECA5CDEB267FB69B00726F9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5CDEA267FB69B00726F9E /* SceneDelegate.swift */; };
 		ECA5CDED267FB69B00726F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5CDEC267FB69B00726F9E /* ViewController.swift */; };
@@ -56,8 +64,16 @@
 		EC122B8A2684BBF8003F1184 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		EC122B8D2684BD05003F1184 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		EC122B902684BD81003F1184 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		EC5449E6268A4A4F0069F1F0 /* BodyParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParameter.swift; sourceTree = "<group>"; };
+		EC5449E9268A4A710069F1F0 /* BodyParameterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParameterViewModel.swift; sourceTree = "<group>"; };
+		EC5449EC268A4B3C0069F1F0 /* BodyParameterStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParameterStorage.swift; sourceTree = "<group>"; };
+		EC5449F1268A53060069F1F0 /* ParameterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterTableViewCell.swift; sourceTree = "<group>"; };
+		EC5449F2268A53060069F1F0 /* ParameterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParameterTableViewCell.xib; sourceTree = "<group>"; };
 		EC5C51882683ACD0003B7927 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		EC5C518B2683B003003B7927 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EC62D65A268918EF00B42040 /* ParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewController.swift; sourceTree = "<group>"; };
+		EC62D65D2689191500B42040 /* ParametersViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParametersViewController.storyboard; sourceTree = "<group>"; };
+		EC62D66126891CBA00B42040 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 		ECA5CDE5267FB69B00726F9E /* FitnessPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA5CDE8267FB69B00726F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA5CDEA267FB69B00726F9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +153,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EC5449F6268A56300069F1F0 /* ParameterCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC5449F1268A53060069F1F0 /* ParameterTableViewCell.swift */,
+				EC5449F2268A53060069F1F0 /* ParameterTableViewCell.xib */,
+			);
+			path = ParameterCell;
+			sourceTree = "<group>";
+		};
 		EC5C51872683ABEE003B7927 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +172,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		EC62D66026891C7400B42040 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				EC62D66126891CBA00B42040 /* PopAnimator.swift */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
 		EC8EF0B62682720D00E3A601 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +187,7 @@
 				EC122B892684BBC6003F1184 /* Models */,
 				EC5C51872683ABEE003B7927 /* ViewModels */,
 				EC0008DD2682036C00743FF7 /* ViewControllers */,
+				EC62D66026891C7400B42040 /* PopUp */,
 				EC0008DC2682035500743FF7 /* Storyboards */,
 			);
 			path = Presentation;
@@ -238,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				ECC5E90A26835EBB00395C22 /* ProfileViewController.swift */,
+				EC62D65A268918EF00B42040 /* ParametersViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -279,6 +314,8 @@
 			children = (
 				EC122B8A2684BBF8003F1184 /* Profile.swift */,
 				EC122B8D2684BD05003F1184 /* ProfileManager.swift */,
+				EC5449E6268A4A4F0069F1F0 /* BodyParameter.swift */,
+				EC5449EC268A4B3C0069F1F0 /* BodyParameterStorage.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -287,6 +324,8 @@
 			isa = PBXGroup;
 			children = (
 				ECC5E90D26835ED400395C22 /* ProfileViewController.storyboard */,
+				EC62D65D2689191500B42040 /* ParametersViewController.storyboard */,
+				EC5449F6268A56300069F1F0 /* ParameterCell */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -344,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				EC122B902684BD81003F1184 /* ProfileViewModel.swift */,
+				EC5449E9268A4A710069F1F0 /* BodyParameterViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -434,7 +474,9 @@
 				ECC5E9212683604A00395C22 /* CalculatorViewController.storyboard in Resources */,
 				EC0008D62681FF7F00743FF7 /* StartViewController.storyboard in Resources */,
 				ECC5E90E26835ED400395C22 /* ProfileViewController.storyboard in Resources */,
+				EC5449F4268A53060069F1F0 /* ParameterTableViewCell.xib in Resources */,
 				ECA5CDF5267FB69C00726F9E /* LaunchScreen.storyboard in Resources */,
+				EC62D65E2689191500B42040 /* ParametersViewController.storyboard in Resources */,
 				ECA5CDF2267FB69C00726F9E /* Assets.xcassets in Resources */,
 				ECC5E91426835F3F00395C22 /* ProgressViewController.storyboard in Resources */,
 				ECC5E91B26835FDD00395C22 /* ProgramsViewController.storyboard in Resources */,
@@ -452,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0008CC2681F6A300743FF7 /* Coordinator.swift in Sources */,
+				EC62D66226891CBA00B42040 /* PopAnimator.swift in Sources */,
 				EC0008DA2682011500743FF7 /* StartViewController.swift in Sources */,
 				ECC5E91826835FC800395C22 /* ProgramsViewController.swift in Sources */,
 				ECC5E9242683609300395C22 /* MusclesViewController.swift in Sources */,
@@ -462,6 +505,8 @@
 				EC0008D22681F9C400743FF7 /* MainCoordinator.swift in Sources */,
 				ECC5E9332683616700395C22 /* MainCoordinator+Calculator.swift in Sources */,
 				EC0008E9268231D600743FF7 /* HomeViewController.swift in Sources */,
+				EC5449EA268A4A710069F1F0 /* BodyParameterViewModel.swift in Sources */,
+				EC5449ED268A4B3C0069F1F0 /* BodyParameterStorage.swift in Sources */,
 				ECA5CDED267FB69B00726F9E /* ViewController.swift in Sources */,
 				ECC5E91126835F2F00395C22 /* ProgressViewController.swift in Sources */,
 				ECC5E9302683615000395C22 /* MainCoordinator+Programs.swift in Sources */,
@@ -469,13 +514,16 @@
 				ECC5E90B26835EBB00395C22 /* ProfileViewController.swift in Sources */,
 				ECA5CDE9267FB69B00726F9E /* AppDelegate.swift in Sources */,
 				ECC5E92A268360F700395C22 /* MainCoordinator+Profile.swift in Sources */,
+				EC5449E7268A4A4F0069F1F0 /* BodyParameter.swift in Sources */,
 				EC5C518C2683B003003B7927 /* HomeViewModel.swift in Sources */,
 				ECC5E9362683617D00395C22 /* MainCoordinator+Muscles.swift in Sources */,
 				ECC5E92D2683613200395C22 /* MainCoordinator+Progress.swift in Sources */,
 				EC122B8B2684BBF8003F1184 /* Profile.swift in Sources */,
+				EC62D65B268918EF00B42040 /* ParametersViewController.swift in Sources */,
 				ECC5E91E2683603900395C22 /* CalculatorViewController.swift in Sources */,
 				ECA5CDEB267FB69B00726F9E /* SceneDelegate.swift in Sources */,
 				ECEACA7A2687AC1700833318 /* MenuTableViewCell.swift in Sources */,
+				EC5449F3268A53060069F1F0 /* ParameterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

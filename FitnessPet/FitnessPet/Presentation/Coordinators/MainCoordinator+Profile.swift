@@ -15,4 +15,10 @@ extension MainCoordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func presentParameters() {
+        let vc = ParametersViewController.instantiate()
+        vc.coordinator = self
+        navigationController.present(vc, animated: true)
+    }
 }
