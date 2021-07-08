@@ -38,8 +38,8 @@ class MainCoordinator: Coordinator {
         navigationController.popViewController(animated: true)
     }
     
-    func dismiss() {
-        navigationController.dismiss(animated: true, completion: nil)
+    func dismiss(animated: Bool) {
+        navigationController.dismiss(animated: animated, completion: nil)
     }
     
 }

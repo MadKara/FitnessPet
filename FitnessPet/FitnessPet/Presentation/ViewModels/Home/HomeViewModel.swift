@@ -6,11 +6,10 @@
 //
 
 import Foundation
-import UIKit
 
 struct HomeViewModel {
     
-    let options = ["Profile", "Progress", "Programs", "Calculator", "Muscles"]
+    let options = ["Профіль", "Прогрес", "Програми", "Калькулятор", "М'язи"]
     
     enum Menu: String {
         case profile = "ProfileViewController"
@@ -22,4 +21,23 @@ struct HomeViewModel {
     
     let controllersId = [Menu.profile, .progress, .programs, .calculator, .muscles]
     
+    var profile = ProfileManager.sharedProfileManager.userInfo
+    var parametersList: [BodyParameter] = ProfileManager.sharedProfileManager.userInfo?.parameters ?? []
+    var userName = ProfileManager.sharedProfileManager.userInfo?.name ?? ""
+    
+    func presentMenuControllers(indexPath: IndexPath, coordinator: MainCoordinator?, completion: SelectionClosureType<Any>? = nil) {
+        
+        switch controllersId[indexPath.row] {
+        case .profile:
+            coordinator?.presentProfile(completion: completion)
+        case .progress:
+            coordinator?.presentProgress()
+        case .programs:
+            coordinator?.presentPrograms()
+        case .calculator:
+            coordinator?.presentCalculator()
+        case .muscles:
+            coordinator?.presentMuscles()
+        }
+    }  
 }

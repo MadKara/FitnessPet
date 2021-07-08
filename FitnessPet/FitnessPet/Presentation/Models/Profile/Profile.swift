@@ -13,17 +13,20 @@ class Profile: Codable {
     var name: String
     var sex: String
     var image: UIImage
+    var parameters: [BodyParameter]?
     
-    init(name: String, sex: String, image: UIImage) {
+    init(name: String, sex: String, image: UIImage, parameters: [BodyParameter]?) {
         self.name = name
         self.sex = sex
         self.image = image
+        self.parameters = parameters
     }
     
     enum CodingKeys: String, CodingKey {
         case name
         case sex
         case image
+        case parameters
     }
     
     func encode(to encoder: Encoder) throws {
@@ -34,6 +37,8 @@ class Profile: Codable {
         let data: Data = image.pngData()!
         let stringBase64 = data.base64EncodedString(options: .lineLength64Characters)
         try container.encode(stringBase64, forKey: .image)
+        
+        try container.encode(parameters, forKey: .parameters)
     }
     required init(from decoder: Decoder) throws {
         var container = try decoder.container(keyedBy: CodingKeys.self)
@@ -43,5 +48,7 @@ class Profile: Codable {
         let stringBase64 = try container.decode(String.self, forKey: .image)
         let data = Data(base64Encoded: stringBase64, options: .ignoreUnknownCharacters)!
         image = UIImage(data: data)!
+        
+        parameters = try container.decode([BodyParameter].self, forKey: .parameters)
     }
 }

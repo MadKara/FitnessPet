@@ -10,15 +10,16 @@ import UIKit
 
 extension MainCoordinator {
     
-    func presentProfile() {
+    func presentProfile(completion: SelectionClosureType<ProfileViewModel>?) {
         let vc = ProfileViewController.instantiate()
         vc.coordinator = self
+        vc.onUpdateProfile = completion
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func presentParameters() {
-        let vc = ParametersViewController.instantiate()
-        vc.coordinator = self
-        navigationController.present(vc, animated: true)
+    func presentParameters(viewController: ParametersViewController, viewModel: ProfileViewModel) {
+        viewController.coordinator = self
+        viewController.profileViewModel = viewModel
+        navigationController.present(viewController, animated: true)
     }
 }

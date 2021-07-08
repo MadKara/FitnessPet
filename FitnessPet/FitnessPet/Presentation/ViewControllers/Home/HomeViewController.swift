@@ -13,27 +13,42 @@ class HomeViewController: BaseViewController, Storyboarded {
     private var homeViewModel = HomeViewModel()
 
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var labelSex: UILabel!
+    @IBOutlet private weak var sexLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setMainViewControllerConfig()
+        
         tableView.dataSource = self
         tableView.delegate = self
         
         tableView.register(MenuTableViewCell.nib, forCellReuseIdentifier: MenuTableViewCell.identifier)
-        
-        labelSex.text = ProfileManager.sharedProfileManager.userInfo?.sex
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        setupUserInfo()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    func setMainViewControllerConfig() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.tintColor = .yellow
+        navigationItem.setHidesBackButton(true, animated: true)
+      }
+
+    func setupUserInfo() {
+        sexLabel.text = homeViewModel.profile?.sex
+        nameLabel.text = homeViewModel.userName
     }
 }
 //MARK: - UITableViewDataSource
@@ -61,18 +76,13 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: false)
-        
-        switch homeViewModel.controllersId[indexPath.row] {
-        case .profile:
-            coordinator?.presentProfile()
-        case .progress:
-            coordinator?.presentProgress()
-        case .programs:
-            coordinator?.presentPrograms()
-        case .calculator:
-            coordinator?.presentCalculator()
-        case .muscles:
-            coordinator?.presentMuscles()
+        homeViewModel.presentMenuControllers(indexPath: indexPath, coordinator: coordinator) { [weak self] profileViewModel in
+            guard let profileViewModel = profileViewModel as? ProfileViewModel else {
+                return
+            }
+            self?.homeViewModel.userName = profileViewModel.userName ?? ""
+            self?.homeViewModel.parametersList = profileViewModel.profileParametersList!
+            self?.setupUserInfo()
         }
     }
 }

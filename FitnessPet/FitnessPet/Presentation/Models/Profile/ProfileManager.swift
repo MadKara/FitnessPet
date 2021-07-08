@@ -17,7 +17,8 @@ class ProfileManager {
     var defaultProfile = Profile(
         name: "",
         sex: "",
-        image: UIImage(systemName: "info.circle")!
+        image: UIImage(systemName: "info.circle")!,
+        parameters: []
     )
     var userInfo: Profile? {
         return getProfileData()
