@@ -35,6 +35,6 @@ class ParameterTableViewCell: UITableViewCell {
         parameterName.text = viewModel.bodyPart
         parameterUnit.text = viewModel.unit
         parameterState.isSelected = viewModel.isSelected
-        //valueTextField.text = viewModel.changedValue
+        valueTextField.text = viewModel.changedValueText
     }
 }

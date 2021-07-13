@@ -15,14 +15,21 @@ class HomeViewController: BaseViewController, Storyboarded {
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var sexLabel: UILabel!
     @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var collectionView: UICollectionView!
+    
+    let labels = ["lk", "lk", "jj", "jk", "pp", "oo", "sdfhsjdkf"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setMainViewControllerConfig()
         
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
         tableView.dataSource = self
         tableView.delegate = self
         
+        collectionView.register(ParametersCollectionViewCell.nib, forCellWithReuseIdentifier: ParametersCollectionViewCell.identifier)
         tableView.register(MenuTableViewCell.nib, forCellReuseIdentifier: MenuTableViewCell.identifier)
     }
     
@@ -85,4 +92,22 @@ extension HomeViewController: UITableViewDelegate {
             self?.setupUserInfo()
         }
     }
+}
+
+extension HomeViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return labels.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ParametersCollectionViewCell.identifier, for: indexPath) as! ParametersCollectionViewCell
+        cell.parameterName.text = labels[indexPath.row]
+        
+        return cell
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    
 }

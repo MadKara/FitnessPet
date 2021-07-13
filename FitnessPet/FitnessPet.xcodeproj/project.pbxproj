@@ -56,6 +56,8 @@
 		ECC5E9392683644000395C22 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5E9382683644000395C22 /* BaseViewController.swift */; };
 		ECEACA7A2687AC1700833318 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEACA782687AC1700833318 /* MenuTableViewCell.swift */; };
 		ECEACA7B2687AC1700833318 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEACA792687AC1700833318 /* MenuTableViewCell.xib */; };
+		ECF4D5EF26977BB700A94588 /* ParametersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4D5ED26977BB700A94588 /* ParametersCollectionViewCell.swift */; };
+		ECF4D5F026977BB700A94588 /* ParametersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF4D5EE26977BB700A94588 /* ParametersCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,8 @@
 		ECC5E9382683644000395C22 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ECEACA782687AC1700833318 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		ECEACA792687AC1700833318 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		ECF4D5ED26977BB700A94588 /* ParametersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECF4D5EE26977BB700A94588 /* ParametersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParametersCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0008E5268231C000743FF7 /* HomeViewController.storyboard */,
+				ECF4D5EC26977B7000A94588 /* ParametersCollectionCell */,
 				ECEACA7D2687C10700833318 /* MenuCell */,
 			);
 			path = Home;
@@ -442,6 +447,15 @@
 				ECEACA792687AC1700833318 /* MenuTableViewCell.xib */,
 			);
 			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		ECF4D5EC26977B7000A94588 /* ParametersCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECF4D5ED26977BB700A94588 /* ParametersCollectionViewCell.swift */,
+				ECF4D5EE26977BB700A94588 /* ParametersCollectionViewCell.xib */,
+			);
+			path = ParametersCollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +526,7 @@
 				ECA5CDF2267FB69C00726F9E /* Assets.xcassets in Resources */,
 				ECC5E91426835F3F00395C22 /* ProgressViewController.storyboard in Resources */,
 				ECC5E91B26835FDD00395C22 /* ProgramsViewController.storyboard in Resources */,
+				ECF4D5F026977BB700A94588 /* ParametersCollectionViewCell.xib in Resources */,
 				ECEACA7B2687AC1700833318 /* MenuTableViewCell.xib in Resources */,
 				ECC5E927268360A200395C22 /* MusclesViewController.storyboard in Resources */,
 				ECA5CDF0267FB69B00726F9E /* Main.storyboard in Resources */,
@@ -541,6 +556,7 @@
 				EC5449EA268A4A710069F1F0 /* BodyParameterViewModel.swift in Sources */,
 				EC5449ED268A4B3C0069F1F0 /* BodyParameterStorage.swift in Sources */,
 				ECA5CDED267FB69B00726F9E /* ViewController.swift in Sources */,
+				ECF4D5EF26977BB700A94588 /* ParametersCollectionViewCell.swift in Sources */,
 				EC887B83268DE77F000F4909 /* SampleParameterTableViewCell.swift in Sources */,
 				ECC5E91126835F2F00395C22 /* ProgressViewController.swift in Sources */,
 				ECC5E9302683615000395C22 /* MainCoordinator+Programs.swift in Sources */,

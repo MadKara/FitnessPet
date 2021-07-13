@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SelectParameters {
+    func saveSelectedParameters()
+}
+
 class ProfileViewController: BaseViewController, Storyboarded, PassParameters {
     
     @IBOutlet private weak var nameLabel: UILabel!
